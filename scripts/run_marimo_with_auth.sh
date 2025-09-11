@@ -2,7 +2,7 @@
 
 # https://docs.marimo.io/
 
-# 기본값 설정
+# Set default values.
 TASKSET_LIST="no input"
 COMMAND="edit"
 HOST="0.0.0.0"
