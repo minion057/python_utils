@@ -25,4 +25,4 @@ Other necessary information:
 - Python >= 3.4
 
 ## Usage
-Clone this repository, or copy individual modules or functions into your marimo project.
+Clone this repository, or copy individual modules or functions into your python project.
