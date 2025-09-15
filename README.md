@@ -3,6 +3,7 @@ A collection of handy utility functions for efficient, reproducible python workf
 
 ## Features (To Do List)
 - [x] Register on [PyPI](https://pypi.org/project/pytoolbox4dev/).
+  - ``` python -m twine upload dist/* ```
 - [ ] Manage the registered items on PyPI.
 - [x] Execution time measurement utilities for profiling code in marimo
 - [ ] Move and write the necessary functions for folder creation, path checking, etc. using Pathlib here.  
