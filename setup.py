@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='pytoolbox4dev',
-    version='0.0.1',
+    version='0.1.0',
     description='A collection of handy utility functions for efficient, reproducible python workflows.',
     author='minion057',
     author_email='getit3981@gmail.com',
