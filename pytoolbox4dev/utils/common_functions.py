@@ -1,5 +1,8 @@
 import time
 
+from pytoolbox4dev.decorators.public_decorator import *
+
+@public
 def measure_execution_time(func, *args, **kwargs):
     """Measures and prints the execution time of a given function.
 
