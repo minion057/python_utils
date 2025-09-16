@@ -44,3 +44,44 @@ def measure_execution_time(func, *args, **kwargs):
     if error is not None:
         raise error
     return result
+
+@public
+def start_timer():
+    """
+    Returns the current high-resolution time.
+
+    This function captures the current time using time.perf_counter(),
+    which provides the highest available resolution timer on the system,
+    suitable for measuring short durations accurately.
+
+    Returns
+    -------
+    float
+        The current time in seconds as a floating point number.
+    """
+    return time.perf_counter()
+
+@public
+def stop_timer(start_time, return_time=False):
+    """
+    Calculate and output or return elapsed time since the start time.
+
+    Parameters
+    ----------
+    start_time : float
+        The start time obtained from `start_timer()`.
+    return_time : bool, optional
+        If True, the function returns the elapsed time instead of printing it.
+        Default is False.
+
+    Returns
+    -------
+    float or None
+        Returns the elapsed time in seconds if `return_time` is True.
+        Otherwise, returns None.
+    """
+    end_time = time.perf_counter()
+    elapsed = end_time - start_time
+    print(f'Elapsed time: {elapsed:.6f} seconds')
+    if return_time:
+        return elapsed
