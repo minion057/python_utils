@@ -82,6 +82,6 @@ def stop_timer(start_time, return_time=False):
     """
     end_time = time.perf_counter()
     elapsed = end_time - start_time
-    print(f'Elapsed time: {elapsed:.6f} seconds')
     if return_time:
         return elapsed
+    print(f'Elapsed time: {elapsed:.6f} seconds')
